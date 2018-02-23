@@ -1,0 +1,12 @@
+#infoPerfil{
+    padding: 3%;
+}
+.card-img-overlay>h4{
+    position: absolute;
+    left: 2%;;
+    top: 48%;
+    color: whitesmoke;
+}
+p>img{
+    margin-bottom:4px;
+}
