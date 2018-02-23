@@ -1,5 +1,8 @@
 #infoPerfil{
-    padding: 3%;
+    padding: 2%;
+}
+#datosPerfil{
+    padding: 2%;
 }
 .perfil>img{
     position: relative;
