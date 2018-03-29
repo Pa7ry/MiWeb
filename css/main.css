@@ -1,0 +1,43 @@
+html, body {
+    height: 100vh;
+    margin: 0;
+    background-image: url('img/fondo1.jpg');
+}
+
+#main {
+    display: grid;
+    padding: 30px;
+    height: 100vh;
+    grid-template: repeat(6, 1fr) / repeat(8, 1fr); 
+    grid-gap: 30px;
+}
+
+.app1 {
+    background: blue;
+}
+
+.app2 {
+    background: darkgoldenrod;
+    grid-row: 2 / 3;
+}
+
+.app3 {
+    background: darkcyan;
+    grid-row: 3 / 4;
+}
+
+.app4 {
+    background: rgb(52, 88, 88);
+    grid-row: 4 / 5;
+}
+
+.app5 {
+    background: deeppink;
+    grid-row: 5 / 6;
+}
+
+.app6 {
+    background: darkcyan;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}

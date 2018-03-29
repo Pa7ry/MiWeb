@@ -1,0 +1,20 @@
+html, body {
+    height: 100vh;
+    padding: 1%;
+}
+
+.perfil {
+    height: 373px;
+}
+
+h4 {
+    color: whitesmoke;
+}
+
+p>img{
+    margin-bottom:4px;
+}
+p{
+    padding: 7px;
+    margin-bottom: 0;
+}
