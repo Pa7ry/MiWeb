@@ -1,0 +1,6 @@
+#main {
+    display: grid;
+    height: 100vh;
+    grid-template: repeat(4, 1fr) / repeat(8, 1fr); 
+    grid-gap: 30px;
+}

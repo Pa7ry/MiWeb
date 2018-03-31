@@ -1,0 +1,12 @@
+#bar {
+    grid-row: 4 / 5;
+    grid-column: 8 / 9;
+    margin-top: 122px;
+    background: #01526F;
+    border-radius: 1%;
+    color: white;
+}
+
+#bar.hide {
+    display: none;
+}

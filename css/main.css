@@ -1,85 +1,142 @@
-html, body {
-    height: 100vh;
-    margin: 0;
-    background-image: url('../img/fondo1.jpg');
-}
-
 #main {
-    display: grid;
-    height: 100vh;
-    grid-template: repeat(4, 1fr) / repeat(8, 1fr); 
-    grid-gap: 30px;
-}
-
-.app2 {
-    grid-row: 2 / 3;
-}
-
-.app3 {
-    grid-row: 3 / 4;
-}
-
-.app4 {
-    grid-row: 4 / 5;
-}
-
-.app5 {
-    grid-column: 2 /3;
-    grid-row: 1 / 2;
-}
-
-.app6 {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-}
-
-.center {
-    align-self: center;
-    text-align: center;
-}
+  display: grid;
+  height: 100vh;
+  grid-template: repeat(4, 1fr)/repeat(8, 1fr);
+  grid-gap: 30px; }
 
 #contacto {
-    grid-column: 3 / 7;
-    grid-row: 2 / 4;
-    background: seashell;
-    border: rgb(46, 139, 116) solid 2px;
-    display: grid;
-    grid-template: 5% 1fr / repeat(2, 1fr)
-}
-
-#menu {
+  grid-column: 3 / 7;
+  grid-row: 2 / 4;
+  background: seashell;
+  border: #01526F solid 2px;
+  display: grid;
+  grid-template: 7% 1fr/repeat(2, 1fr);
+  border-radius: 1%;
+  align-self: center; }
+  #contacto #menu {
     grid-column: 1 /3;
-    background: rgb(46, 139, 116);
-}
-
-#info {
+    display: grid;
+    background: #01526F;
+    color: white; }
+  #contacto #info {
     grid-row: 2 / 3;
     grid-column: 2 /3;
-}
-
-i {
-    text-align: right;
-}
-
-p {
-    margin-left: 7px;
-}
+    align-self: center; }
 
 #contacto.hide {
-    display: none;
-}
+  display: none; }
 
 #bar {
-    grid-row: 4 / 5;
-    grid-column: 8 / 9;
-    background: rgb(46, 139, 116);
-}
+  grid-row: 4 / 5;
+  grid-column: 8 / 9;
+  margin-top: 122px;
+  background: #01526F;
+  border-radius: 1%;
+  color: white; }
 
-#maxi {
-    grid-row: 1 / -1;
-    grid-column: 1 / -1;
-}
+#bar.hide {
+  display: none; }
 
-.hide {
-    display: none;
-}
+.app2 {
+  grid-row: 2 / 3; }
+
+.app3 {
+  grid-row: 3 / 4; }
+
+.app4 {
+  grid-row: 4 / 5; }
+
+.app5 {
+  grid-column: 2 /3;
+  grid-row: 1 / 2; }
+
+.app6 {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3; }
+
+#notas {
+  grid-column: 4 / 6;
+  grid-row: 2 / 4;
+  background: seashell;
+  border: #01526F solid 2px;
+  display: grid;
+  grid-template: 7% 1fr/repeat(2, 1fr);
+  border-radius: 1%;
+  align-self: center; }
+  #notas #menu2 {
+    grid-column: 1 /3;
+    display: grid;
+    background: #01526F;
+    color: white; }
+  #notas #info2 {
+    grid-row: 2 / 3;
+    grid-column: 1 /3;
+    align-self: center;
+    padding: 10px; }
+    #notas #info2 .container {
+      display: block;
+      position: relative;
+      padding-left: 35px;
+      margin-bottom: 12px;
+      cursor: pointer;
+      user-select: none; }
+    #notas #info2 .container input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer; }
+    #notas #info2 .checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 15px;
+      width: 15px;
+      background-color: #eee; }
+    #notas #info2 .container:hover input ~ .checkmark {
+      background-color: #ccc; }
+    #notas #info2 .container input:checked ~ .checkmark {
+      background-color: #2e8b74; }
+    #notas #info2 .checkmark:after {
+      content: "";
+      position: absolute;
+      display: none; }
+    #notas #info2 .container input:checked ~ .checkmark:after {
+      display: block; }
+    #notas #info2 .container .checkmark:after {
+      left: 5px;
+      top: 1px;
+      width: 3px;
+      height: 8px;
+      border: solid white;
+      border-width: 0 3px 3px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg); }
+
+#notas.hide {
+  display: none; }
+
+#bar2 {
+  grid-row: 4 / 5;
+  margin-top: 122px;
+  background: #01526F;
+  border-radius: 1%;
+  color: white; }
+
+html, body {
+  height: 100vh;
+  margin: 0;
+  background-image: url("../img/fondo1.jpg");
+  background-size: 100%; }
+  html .center, body .center {
+    align-self: center;
+    text-align: center; }
+  html .hide, body .hide {
+    display: none; }
+  html .pointer, body .pointer {
+    cursor: pointer; }
+  html .right, body .right {
+    text-align: right;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3; }
+
+/*# sourceMappingURL=main.css.map */

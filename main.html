@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/main.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
         crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
 </head>
 <body>
     <div id='main'>
@@ -23,23 +24,25 @@
             <a href='#'><img src='img/persona.png'/></a>
             <p><a href='#'>Contacto</a></p>
         </div>
-        <div class="app4 center">
-            <a href='files/CV.pdf'><img src='img/prueba.png'/></a>
-            <p><a href='files/CV.pdf'>Notas</a></p>
+        <div id = 'notes' class="app4 center">
+            <a href='#'><img src='img/prueba.png'/></a>
+            <p><a href='#'>Notas</a></p>
         </div>
         <div class="app5 center">
-            <a href='files/CV.pdf'><img src='img/rompecabezas.png' /></a>
-            <p><a href='files/CV.pdf'>Juegos</a></p>
+            <a href='#'><img src='img/rompecabezas.png' /></a>
+            <p><a href='#'>Juegos</a></p>
         </div>
         <div class="app6 center">
-            <a href='files/CV.pdf'><img src='img/configuracion.png' /></a>
-            <p><a href='files/CV.pdf'>Herramientas</a></p>
+            <a href='#'><img src='img/configuracion.png' /></a>
+            <p><a href='#'>Herramientas</a></p>
         </div>
         <div id='contacto' class='hide'>
             <div id='menu'>
                 <b>Contacto</b> 
-                <span id='min'><i class="far fa-window-minimize"></i></span>
-                <span id='close'><i class="fas fa-times"></i></span>
+                <div class='right'>
+                    <span id='min'><i class="far fa-window-minimize pointer"></i></span>
+                    <span id='close'><i class="fas fa-times pointer"></i></span>
+                </div>
             </div>
             <div id='info'>
                 <p><b>Nombre:</b></p>
@@ -51,9 +54,54 @@
             </div>
         </div>
         <div id='bar' class='hide'>
-            <span id='rest'><i class="far fa-window-restore"></i></span>
-            <span id='closed'><i class="fas fa-times"></i></span>
+            <span id='rest'><i class="far fa-window-restore pointer"></i></span>
+            <span id='closed'><i class="fas fa-times pointer"></i></span>
         </div>
+        <div id='notas' class='hide'>
+            <div id='menu2'>
+                <b>Notas</b> 
+                <div class='right'>
+                    <span id='min2'><i class="far fa-window-minimize pointer"></i></span>
+                    <span id='close2'><i class="fas fa-times pointer"></i></span>
+                </div>
+            </div>
+            <div id='info2'>
+                <h4>Proyectos:</h4>
+                <label class='container'>Encontrar trabajar de programmer.
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class='container'>Acabar curso de JS de Platzi.
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class='container'>Acabar juego de Pokemon.
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class='container'>Mejorar con Angular.
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class='container'>Aprender React.
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class='container'>Aprender node.js.
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class='container'>Cobrar 40K :D.
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </div>
+        <div id='bar2' class='hide'>
+            <span id='rest2'><i class="far fa-window-restore pointer"></i></span>
+            <span id='closed2'><i class="fas fa-times pointer"></i></span>
+        </div>
+        <span id='secreto'></span>
     </div>
     <script src='./js/main.js'></script>
 </body>

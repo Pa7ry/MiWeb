@@ -1,0 +1,33 @@
+@import 'main';
+@import 'contacto';
+@import 'contactomin';
+@import 'app';
+@import 'notas';
+@import 'notasmin';
+//@import 'secreto';
+
+html, body {
+    height: 100vh;
+    margin: 0;
+    background-image: url('../img/fondo1.jpg');
+    background-size: 100%;
+
+    .center {
+            align-self: center;
+            text-align: center;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .pointer {
+        cursor: pointer;
+    }
+
+    .right {
+        text-align: right;
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+    }
+}
