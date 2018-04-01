@@ -18,6 +18,14 @@
     display: grid;
     background: #01526F;
     color: white; }
+  #contacto #foto {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    align-self: center;
+    padding: 2%; }
+    #contacto #foto img {
+      width: 85%;
+      margin-left: 15px; }
   #contacto #info {
     grid-row: 2 / 3;
     grid-column: 2 /3;

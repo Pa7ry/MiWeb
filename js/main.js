@@ -4,6 +4,7 @@ let notas = document.getElementById('notas');
 let bar2 = document.getElementById('bar2');
 let juegos = document.getElementById('juegos');
 let bar3 = document.getElementById('bar3');
+let secreto = document.getElementById('secreto');
 
 //VENTANA CONTACTO
 if (contacto.className = 'hide') {
@@ -141,14 +142,16 @@ document.addEventListener('keyup', (ev) => {
         || acumulador.includes('nosotros') || acumulador.includes('pringada')
         || acumulador.includes('gianmarco')) {
         console.log('hola')
-        document.getElementById('secreto').style = `grid-column: 3 / 7;
-                                                    grid-row: 2 / 4;
-                                                    background: violet;
-                                                    color: white;
-                                                    font-family: 'Bitter', serif;
-                                                    text-align: center;
-                                                    overflow: auto`;
-        document.getElementById('secreto').innerHTML = `
+        secreto.style = `grid-column: 3 / 7;
+                        grid-row: 2 / 4;
+                        background: rgb(136, 53, 136);
+                        color: white;
+                        font-family: 'Bitter', serif;
+                        text-align: center;
+                        overflow: auto;
+                        border-radius: 2%;`;                                                    ;
+        console.log('hola')
+        secreto.innerHTML = `
             <p><b>Condiciones para ambos</b></p>
             <p><u>1. Ser sinceros:</u></p>
                 <p>1.1. Contarnos todo</p>
@@ -183,11 +186,19 @@ document.addEventListener('keyup', (ev) => {
                 <p>10. No dejemos de vernos jamás</p>
             <p><u>Anexo 1</u></p>
             <p><b>¡No dejarnos nunca!</b></p>`
-        //window.open('pringaos.html');
         acumulador = ''
     } else if (acumulador.includes('adios') || acumulador.includes('hastapronto')
         || acumulador.includes('cerrar') || acumulador.includes('aceptar')) {
         console.log('hola')
-        document.getElementById('secreto').style = `display: none`
+        //secreto.style.backgroundImage = 'url("img/novios.jpeg")'
+        secreto.style = `grid-column: 4 / 6;
+                        grid-row: 1 / 4;
+                        background-image: url('img/novios.jpeg');
+                        background-size: 100%;
+                        color: transparent;`
+        setTimeout(() => {
+            secreto.style.backgroundImage = `url('')`;
+            secreto.style = 'display:none;'
+        }, 1000)
     }
 });
