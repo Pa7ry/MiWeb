@@ -2,6 +2,8 @@ let contacto = document.getElementById('contacto');
 let bar = document.getElementById('bar');
 let notas = document.getElementById('notas');
 let bar2 = document.getElementById('bar2');
+let juegos = document.getElementById('juegos');
+let bar3 = document.getElementById('bar3');
 
 //VENTANA CONTACTO
 if (contacto.className = 'hide') {
@@ -38,8 +40,9 @@ document.getElementById('rest').addEventListener('click', () => {
 });
 
 contacto.addEventListener('click', () => {
-    contacto.style = 'z-index: 2;';
+    contacto.style = 'z-index: 3;'
     notas.style = 'z-index: 1;'
+    juegos.style = 'z-index: 2;'
 });
 
 //VENTANA NOTAS
@@ -78,11 +81,53 @@ document.getElementById('rest2').addEventListener('click', () => {
 
 
 notas.addEventListener('click', () => {
-    notas.style = 'z-index: 2;'
+    notas.style = 'z-index: 3;'
     contacto.style = 'z-index: 1;'
+    juegos.style = 'z-index: 2;'
+});
+
+//VENTANA JUEGOS
+if (juegos.className = 'hide') {
+    document.getElementById('games').addEventListener('click', () => {
+        juegos.className = '';
+        if (bar3.className = 'right') {
+            bar3.className = 'hide';
+        }
+    });
+};
+
+document.getElementById('min3').addEventListener('click', () => {
+    juegos.className = 'hide';
+    bar3.className = 'right';
+    if (bar.className == 'right' && bar2.className == 'right' ) {
+        bar3.style = 'grid-column: 6 / 7;'
+    } else if (bar.className == 'right' || bar2.className == 'right' ) {
+        bar3.style = 'grid-column: 7 / 8;'
+    } else {
+        bar3.style = 'grid-column: 8 / 9;'
+    }
+});
+
+document.getElementById('close3').addEventListener('click', () => {
+    juegos.className = 'hide';
+});
+
+document.getElementById('closed3').addEventListener('click', () => {
+    juegos.className = 'hide';
+    bar3.className = 'hide';
+});
+
+document.getElementById('rest3').addEventListener('click', () => {
+    juegos.className = '';
+    bar3.className = 'hide';
 });
 
 
+juegos.addEventListener('click', () => {
+    juegos.style = 'z-index: 3;'
+    contacto.style = 'z-index: 1;'
+    notas.style = 'z-index: 2;'
+});
 
 
 //COTRATO

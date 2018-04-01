@@ -1,0 +1,142 @@
+/*GENERAL*/
+
+html, body {
+	height: 100%;
+	margin:0;
+	background-color: #D8DBE2;
+}
+
+
+/*HEADER*/
+
+header {
+		height: 10%;
+}
+
+header>h1 {
+	padding: 15px;
+	font-family: 'Bowlby One SC', cursive;
+	color: #D81E5B;
+	text-align: center;
+	margin: 0;
+}
+
+hr {
+	margin: 0;
+}
+
+/*SELECT*/
+
+#select{
+	background-color: #A9BCD0;
+	height: 17rem;	
+}
+
+#select.hide {
+	display: none;
+}
+
+#select>h2 {
+	text-align: center;
+	margin: 0;
+	padding-top: 3rem;
+	color: #52489C;
+}
+
+ul {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0;
+}
+
+li {
+	display: inline-block;
+	margin: 5%;
+}
+
+img {
+	max-width: 112px;
+	max-height: 115px;
+}
+
+span {
+	color: #52489C;
+}
+
+/*BATTLE*/
+
+#battle>p {
+	font-family: 'Mina', sans-serif;
+}
+
+#battle {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 2rem;
+}
+
+#poke1, #poke2 {
+	height: 15rem;
+	width: 30%;
+	display: inline-block;
+	border-bottom: 2px solid blue;
+	background-size: 40%;
+	background-repeat: no-repeat;
+	background-position-y: bottom;
+	background-position-x: center;
+}
+
+button {
+	text-align: center;
+	height: 2rem;
+	background: #D81E5B;
+	color: #D8DBE2;
+	border-radius: 8px;
+}
+
+button.hide {
+	display: none;
+}
+
+/*CONTROLS*/
+
+/*#controls, #info {
+	width: 30%;
+	margin-left: 13%;
+}*/
+
+#controls.hide {
+	display: none;
+}
+
+#controls {
+	align-items: center;
+}
+
+#battleAction.hide {
+	display: none;
+}
+
+#battleAction {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+}
+
+#infoBattle {
+	height: 15rem;
+	width: 30%;
+	display: inline-block;
+}
+
+#ps1.hide, #ps2.hide {
+	display: none;
+}
+
+#ps1T.hide, #ps2T.hide {
+	display: none;
+}

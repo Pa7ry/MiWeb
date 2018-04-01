@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pokemon</title>
+	<link rel='stylesheet' href='css/pokemon.css'/>
+	<link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Mina" rel="stylesheet">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+</head>
+<body>
+	<header>
+		<h1>Pokemon</h1>
+		<span><a href='main.html'><i class="fas fa-arrow-left"></i> Volver al escritorio</a></span>
+	</header>
+
+	<div id='main'>
+		<div id='select' class=''>
+			<h2>ELIGE TU POKEMON</h2>
+			<ul>
+				<li onclick='select(event)'><img class='pikachu' src='img/pikachu.png' draggable="true" ondragstart="drag(event)"/></li>
+				<li onclick='select(event)'><img class='charmander' src='img/charmander.png' draggable="true" ondragstart="drag(event)"/></li>
+				<li onclick='select(event)'><img class='bulbasaur' src='img/bulbasaur.png' draggable="true" ondragstart="drag(event)"/></li>
+				<li onclick='select(event)'><img class='squirtle' src='img/squirtle.png' draggable="true" ondragstart="drag(event)"/></li>
+			</ul>
+		</div>
+
+		<div id='battle'>
+			<div id='poke1' ondrop="drop(event)" ondragover="allowDrop(event)">
+				<progress max='100' value='100' name='progress' id='ps1' class='hide'></progress>
+				<label for='progress' id='ps1T' class='hide'>100</label>				
+			</div>
+
+			<button type="button" id='fight' class=''><strong>¡LUCHAR!</strong></button>
+			<div id='controls' class='hide'>
+				<p><button type='button' id='normal'>Atacar</button></p>
+				<p><button type='button' id='super'>Ataque especial</button></p>
+				<p><button type='button' id='useHeal'>Usar poción PS</button></p>
+				<p><button type='button' id='exit'>Abandonar</button></p>
+			</div>
+
+			<div id='poke2' ondrop="drop(event)" ondragover="allowDrop(event)">
+				<progress max='100' value='100' name='progress' id='ps2' class='hide'></progress>
+				<label for='progress' id='ps2T' class='hide'>100</label>
+			</div>
+		</div>	
+	</div>
+
+	<div id='battleAction' class='hide'>
+		<div id='text1'></div>
+	
+		<div id='text2'></div>
+	</div>
+
+	<footer>
+		
+	</footer>
+	<script type="text/javascript" src='js/pokemon.js'></script>
+</body>
+</html>

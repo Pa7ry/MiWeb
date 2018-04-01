@@ -1,24 +1,45 @@
 html, body {
     height: 100vh;
     padding: 1%;
+    background: #01526F;
 }
 
 .perfil {
-    height: 373px;
+    height: 363px;
 }
 
-h4 {
+h4.name {
     color: whitesmoke;
 }
 
 p>img{
     margin-bottom:4px;
 }
+
 p{
-    padding: 7px;
+    padding: 4px;
     margin-bottom: 0;
+    text-align: justify;
 }
 
 u {
     color: purple;
+}
+
+span>a {
+    cursor: pointer;
+    color: white;
+}
+
+a:hover {
+    color: rgb(161, 103, 161);
+}
+
+a {
+    color: purple;
+}
+
+.card {
+    margin-bottom: 20px; 
+    padding: 8px;
 }
